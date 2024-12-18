@@ -1,4 +1,3 @@
-```markdown
 # Plantillas para Proyectos y Tesis de Maestría - Universidad Nacional del Santa
 
 Este repositorio contiene plantillas LaTeX diseñadas para facilitar la creación de proyectos y tesis de maestría en la Universidad Nacional del Santa. Las plantillas están organizadas según las directrices oficiales de la universidad y cubren tanto proyectos de investigación (estructuras) como informes de tesis (cualitativa y cuantitativa).
@@ -65,5 +64,4 @@ Si encuentras errores o quieres proponer mejoras, por favor crea un issue o env�
 ## Licencia
 
 Este repositorio está bajo la licencia MIT. Consulta el archivo [`LICENSE`](LICENSE) para más detalles.
-```
 
