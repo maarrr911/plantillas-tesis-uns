@@ -1,0 +1,14 @@
+*aux
+*bbl
+*bcf
+*blg
+*log
+*out
+*xml
+
+#tableofcontents
+*toc
+
+#showfileshere 
+show.txt
+*py
