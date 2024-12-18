@@ -1,105 +1,69 @@
-# Plantillas-Tesis-UNS
+```markdown
+# Plantillas para Proyectos y Tesis de Maestría - Universidad Nacional del Santa
 
-Este repositorio contiene plantillas para proyectos y tesis de maestría en la Universidad Nacional del Santa (UNS), adaptadas a los lineamientos oficiales establecidos en el reglamento de la Escuela de Postgrado. 
+Este repositorio contiene plantillas LaTeX diseñadas para facilitar la creación de proyectos y tesis de maestría en la Universidad Nacional del Santa. Las plantillas están organizadas según las directrices oficiales de la universidad y cubren tanto proyectos de investigación (estructuras) como informes de tesis (cualitativa y cuantitativa).
 
-Actualmente, se incluye la plantilla para un **Proyecto de Investigación Cuantitativa**, con base en el ANEXO 1 del reglamento.
+---
 
-## Contenido del Repositorio
+## Estructura del Repositorio
 
-- 📂 **proyecto_cuantitativo/**: Contiene la plantilla para proyectos de investigación cuantitativa en formato LaTeX.
-- 📂 **ejemplo/**: Contiene un ejemplo completo basado en la plantilla.
-- 📄 **LICENSE**: Licencia MIT para el uso libre del repositorio.
-- 📄 **README.md**: Información general del repositorio.
+- **`estructuras/`**: Contiene plantillas para los proyectos de investigación.
+  - **`proyecto_cualitativo/`**: Plantilla para proyectos de investigación cualitativa.
+  - **`proyecto_cuantitativo/`**: Plantilla para proyectos de investigación cuantitativa.
 
-## Instrucciones de Uso
+- **`tesis-cualitativa/`**: Plantilla para la tesis cualitativa completa según los lineamientos de la UNS.
+- **`tesis-cuantitativa/`**: Plantilla para la tesis cuantitativa completa según los lineamientos de la UNS.
 
-1. Descargue o clone el repositorio:
+- **`componentes/uns.cls`**: Clase personalizada para definir el estilo y formato requerido por la UNS.
+
+---
+
+## Uso de las Plantillas
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/usuario/plantillas-uns.git
+   cd plantillas-uns
    ```
-   git clone https://github.com/<nombre_usuario>/Plantillas-Tesis-UNS.git
+
+2. **Abrir y editar la plantilla deseada:**
+   - Para proyectos de investigación, usar las plantillas en `estructuras/`.
+   - Para informes de tesis, usar las plantillas en `tesis-cualitativa/` o `tesis-cuantitativa/`.
+
+3. **Compilar el archivo LaTeX**:
+   Utiliza un editor LaTeX (como Overleaf o TeXShop) o compila desde la terminal:
+   ```bash
+   pdflatex main.tex
    ```
-2. Navegue a la carpeta `proyecto_cuantitativo` y edite los archivos `.tex` con los datos de su investigación.
-3. Compile el archivo principal (`main.tex`) utilizando un compilador LaTeX como Overleaf o MikTeX.
-
-¡Contribuciones son bienvenidas! Por favor, abra un *issue* o envíe un *pull request* para sugerencias o mejoras.
 
 ---
 
-**Estructura del Repositorio**
+## Detalles de las Plantillas
 
-```
-Plantillas-Tesis-UNS/
-├── proyecto_cuantitativo/
-│   ├── main.tex       # Archivo principal de LaTeX
-│   ├── secciones/
-│   │   ├── datos_generales.tex
-│   │   ├── plan_investigacion.tex
-│   │   ├── fundamentacion_teorica.tex
-│   │   ├── metodologia.tex
-│   │   ├── cronograma.tex
-│   │   ├── recursos.tex
-│   │   ├── presupuesto.tex
-│   │   ├── bibliografia.tex
-│   │   ├── anexos.tex
-│   └── estilos/
-│       ├── uns.cls   # Clase personalizada para el estilo UNS
-│       └── logo_uns.png  # Logo de la UNS para portada
-├── ejemplo/
-│   ├── ejemplo_proyecto.pdf # Ejemplo generado
-│   ├── ejemplo_proyecto.tex # Fuente del ejemplo
-├── LICENSE
-├── README.md
-```
+### Plantillas para Proyectos (`estructuras/`)
+- **Cualitativa**:
+  - Estructura detallada para proyectos de investigación cualitativa.
+  - Incluye secciones como Objetivos, Referencial Teórico-Empírico, y Referencial Metodológico.
+- **Cuantitativa**:
+  - Estructura detallada para proyectos de investigación cuantitativa.
+  - Incluye secciones como Variables, Hipótesis, y Plan de Investigación.
+
+### Plantillas para Tesis
+- **Tesis Cualitativa**:
+  - Contiene todos los elementos necesarios, como Introducción, Marco Teórico, Material y Métodos, Resultados, y Discusión.
+- **Tesis Cuantitativa**:
+  - Incluye capítulos como Problema de Investigación, Marco Teórico, Marco Metodológico, y Resultados y Discusión.
 
 ---
 
-**Archivo principal: `main.tex`**
+## Contribuciones
 
-```latex
-\documentclass[12pt]{uns}
-\usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
-\usepackage{graphicx}
-\usepackage{lipsum} % Para texto de relleno, eliminar en uso real
-
-\title{T\u00edtulo del Proyecto de Investigaci\u00f3n}
-\author{Nombre del Autor}
-\date{Lugar de Investigaci\u00f3n, \today}
-
-\begin{document}
-
-% Portada
-\maketitle
-\newpage
-
-% Secciones
-\input{secciones/datos_generales}
-\input{secciones/plan_investigacion}
-\input{secciones/fundamentacion_teorica}
-\input{secciones/metodologia}
-\input{secciones/cronograma}
-\input{secciones/recursos}
-\input{secciones/presupuesto}
-\input{secciones/bibliografia}
-\input{secciones/anexos}
-
-\end{document}
-```
+Si encuentras errores o quieres proponer mejoras, por favor crea un issue o envía un pull request.
 
 ---
 
-**Ejemplo de una sección: `datos_generales.tex`**
+## Licencia
 
-```latex
-\section*{I. Datos Generales}
+Este repositorio está bajo la licencia MIT. Consulta el archivo [`LICENSE`](LICENSE) para más detalles.
+```
 
-\subsection*{1.1 T\u00edtulo}
-T\u00edtulo del proyecto de investigaci\u00f3n.
-
-\subsection*{1.2 Autor}
-Nombre del autor o autores.
-
-\subsection*{1.3 Tipo de Investigaci\u00f3n}
-Especificar si es descriptiva, experimental, correlacional, etc.
-
-\subsection*{1.4 Lugar de la Investigaci\u00f3n}
-Especificar el lugar geográfico donde se desarrollará la investigación.
