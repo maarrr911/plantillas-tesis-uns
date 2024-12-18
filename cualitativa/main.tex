@@ -1,0 +1,176 @@
+\documentclass[12pt]{../componentes/uns}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{setspace} % Para ajuste de espacio entre líneas
+\usepackage{lipsum} % Para texto de relleno, eliminar en uso real
+
+\title{Título de la Tesis Cualitativa}
+\author{Nombre del Autor}
+\date{Lugar de Investigación, \today}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.3\textwidth]{../componentes/logo_uns.png} \\
+    \vspace{1cm}
+    \textbf{\Large Universidad Nacional del Santa}\\
+    \textbf{\large Escuela de Postgrado}\\
+    Programa de Maestría en ............................................ \\
+    \vspace{2cm}
+    \textbf{\LARGE Título de la Tesis Cualitativa}\\
+    \vspace{2cm}
+    Tesis de Maestría en .........................................\\
+    Autor(a): Nombres y Apellidos\\
+    Asesor(es): Nombres y Apellidos\\
+    \vfill
+    Lugar y Año\\
+    Registro N° ......................\\
+\end{titlepage}
+
+% Página en blanco
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+% Hoja de conformidad del asesor
+\newpage
+\section*{Hoja de conformidad del asesor}
+Texto de conformidad.
+
+% Hoja de aprobación del Jurado Evaluador
+\newpage
+\section*{Hoja de aprobación del Jurado Evaluador}
+Texto de aprobación.
+
+% Página de dedicatoria (opcional)
+\newpage
+\section*{Dedicatoria}
+\lipsum[1] % Relleno de ejemplo
+
+% Página de agradecimiento (opcional)
+\newpage
+\section*{Agradecimientos}
+\lipsum[2] % Relleno de ejemplo
+
+% Índice
+\newpage
+\tableofcontents
+\newpage
+
+% Lista de gráficos
+\listoffigures
+\newpage
+
+% Lista de cuadros
+\listoftables
+\newpage
+
+% RESUMEN
+\section*{RESUMEN}
+\addcontentsline{toc}{section}{RESUMEN}
+\lipsum[3] % Relleno de ejemplo
+
+% ABSTRACT
+\section*{ABSTRACT}
+\addcontentsline{toc}{section}{ABSTRACT}
+\lipsum[4] % Relleno de ejemplo
+
+% Introducción
+\newpage
+\section{INTRODUCCIÓN}
+\addcontentsline{toc}{section}{INTRODUCCIÓN}
+\lipsum[5]
+
+% CAPÍTULO I: Problema de Investigación
+\newpage
+\section{CAPÍTULO I: PROBLEMA DE INVESTIGACIÓN}
+\subsection{1.1 Presentación y delimitación del problema}
+\lipsum[6]
+
+\subsection{1.2 Objeto de estudio}
+\lipsum[7]
+
+\subsection{1.3 Formulación del problema (o Pregunta Orientadora)}
+\lipsum[8]
+
+\subsection{1.4 Objetivos ó Hipótesis}
+\subsubsection{Generales}
+\lipsum[9]
+
+\subsubsection{Específicos}
+\lipsum[10]
+
+% CAPÍTULO II: Marco Teórico
+\newpage
+\section{CAPÍTULO II: MARCO TEÓRICO}
+\subsection{2.1 Antecedentes}
+\lipsum[11]
+
+\subsection{2.2 Marco conceptual}
+\lipsum[12]
+
+\subsection{2.3 Marco referencial}
+\lipsum[13]
+
+\subsection{2.4 Definición de variables o conceptos principales}
+\lipsum[14]
+
+% CAPÍTULO III: Material y Métodos/Metodología de la Investigación
+\newpage
+\section{CAPÍTULO III: MATERIAL Y MÉTODOS/METODOLOGÍA DE LA INVESTIGACIÓN}
+\subsection{3.1 Tipo de investigación}
+\lipsum[15]
+
+\subsection{3.2 Universo, incluye criterios de inclusión}
+\lipsum[16]
+
+\subsection{3.3 Muestra (o Sujetos participantes)}
+\lipsum[17]
+
+\subsection{3.4 Unidad de Muestreo/Análisis}
+\lipsum[18]
+
+\subsection{3.5 Instrumentos para la recolección de datos}
+\lipsum[19]
+
+\subsection{3.6 Procedimiento}
+\lipsum[20]
+
+\subsection{3.7 Control de calidad de los instrumentos}
+\lipsum[21]
+
+% CAPÍTULO IV: Resultados o Hallazgos
+\newpage
+\section{CAPÍTULO IV: RESULTADOS (O HALLAZGOS)}
+\lipsum[22]
+
+% CAPÍTULO V: Discusión
+\newpage
+\section{CAPÍTULO V: DISCUSIÓN}
+\lipsum[23]
+
+% CAPÍTULO VI: Conclusiones y Sugerencias
+\newpage
+\section{CAPÍTULO VI: CONCLUSIONES Y SUGERENCIAS}
+\subsection{6.1 Conclusiones}
+\lipsum[24]
+
+\subsection{6.2 Recomendaciones}
+\lipsum[25]
+
+% Referencias Bibliográficas
+\newpage
+\section*{REFERENCIAS BIBLIOGRÁFICAS}
+\addcontentsline{toc}{section}{REFERENCIAS BIBLIOGRÁFICAS}
+Las referencias deben numerarse según el estilo de redacción de la American Psychological Association (APA).
+
+% Anexos
+\newpage
+\section*{ANEXOS}
+\addcontentsline{toc}{section}{ANEXOS}
+\lipsum[26]
+
+\end{document}

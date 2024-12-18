@@ -1,0 +1,177 @@
+\documentclass[12pt]{../componentes/uns}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{setspace} % Para ajuste de espacio entre líneas
+\usepackage{lipsum} % Para texto de relleno, eliminar en uso real
+
+\title{Título de la Tesis}
+\author{Nombre del Autor}
+\date{Lugar de Investigación, \today}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.3\textwidth]{../componentes/logo_uns.png} \\
+    \vspace{1cm}
+    \textbf{\Large Universidad Nacional del Santa}\\
+    \textbf{\large Escuela de Postgrado}\\
+    Programa de Maestría en ............................................ \\
+    \vspace{2cm}
+    \textbf{\LARGE Título de la Tesis}\\
+    \vspace{2cm}
+    Tesis de Maestría en .........................................\\
+    Autor(a): Nombres y Apellidos\\
+    Asesor(es): Nombres y Apellidos\\
+    \vfill
+    Lugar y Año\\
+    Registro N° ......................\\
+\end{titlepage}
+
+% Página en blanco
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+% Hoja de conformidad del asesor
+\newpage
+\section*{Hoja de conformidad del asesor}
+Texto de conformidad.
+
+% Hoja de aprobación del Jurado Evaluador
+\newpage
+\section*{Hoja de aprobación del Jurado Evaluador}
+Texto de aprobación.
+
+% Página de dedicatoria (opcional)
+\newpage
+\section*{Dedicatoria}
+\lipsum[1] % Relleno de ejemplo
+
+% Página de agradecimiento (opcional)
+\newpage
+\section*{Agradecimientos}
+\lipsum[2] % Relleno de ejemplo
+
+% Índice
+\newpage
+\tableofcontents
+\newpage
+
+% Lista de cuadros
+\listoftables
+\newpage
+
+% Lista de gráficos
+\listoffigures
+\newpage
+
+% RESUMEN
+\section*{RESUMEN}
+\addcontentsline{toc}{section}{RESUMEN}
+\lipsum[3] % Relleno de ejemplo
+
+% ABSTRACT
+\section*{ABSTRACT}
+\addcontentsline{toc}{section}{ABSTRACT}
+\lipsum[4] % Relleno de ejemplo
+
+% Introducción
+\newpage
+\section{INTRODUCCIÓN}
+\addcontentsline{toc}{section}{INTRODUCCIÓN}
+\lipsum[5]
+
+% CAPÍTULO I: Problema de Investigación
+\newpage
+\section{CAPÍTULO I: PROBLEMA DE INVESTIGACIÓN}
+\subsection{1.1 Planteamiento y fundamentación del problema de investigación}
+\lipsum[6]
+
+\subsection{1.2 Antecedentes de la investigación}
+\lipsum[7]
+
+\subsection{1.3 Formulación del problema de investigación}
+\lipsum[8]
+
+\subsection{1.4 Delimitación del estudio}
+\lipsum[9]
+
+\subsection{1.5 Justificación e importancia de la investigación}
+\lipsum[10]
+
+\subsection{1.6 Objetivos de la investigación}
+\subsubsection{Objetivo General}
+\lipsum[11]
+
+\subsubsection{Objetivos Específicos}
+\lipsum[12]
+
+% CAPÍTULO II: Marco Teórico
+\newpage
+\section{CAPÍTULO II: MARCO TEÓRICO}
+\subsection{2.1 Fundamentos teóricos de la investigación}
+\lipsum[13]
+
+\subsection{2.2 Marco conceptual}
+\lipsum[14]
+
+% CAPÍTULO III: Marco Metodológico
+\newpage
+\section{CAPÍTULO III: MARCO METODOLÓGICO}
+\subsection{3.1 Hipótesis central de la investigación}
+\lipsum[15]
+
+\subsection{3.2 Variables e indicadores de la investigación}
+\lipsum[16]
+
+\subsection{3.3 Métodos de la investigación}
+\lipsum[17]
+
+\subsection{3.4 Diseño o esquema de la investigación}
+\lipsum[18]
+
+\subsection{3.5 Población y muestra}
+\lipsum[19]
+
+\subsection{3.6 Actividades del proceso investigativo}
+\lipsum[20]
+
+\subsection{3.7 Técnicas e instrumentos de la investigación}
+\lipsum[21]
+
+\subsection{3.8 Procedimiento para la recolección de datos}
+\lipsum[22]
+
+\subsection{3.9 Técnicas de procesamiento y análisis de los datos}
+\lipsum[23]
+
+% CAPÍTULO IV: Resultados y Discusión
+\newpage
+\section{CAPÍTULO IV: RESULTADOS Y DISCUSIÓN}
+\lipsum[24]
+
+% CAPÍTULO V: Conclusiones y Recomendaciones
+\newpage
+\section{CAPÍTULO V: CONCLUSIONES Y RECOMENDACIONES}
+\subsection{5.1 Conclusiones}
+\lipsum[25]
+
+\subsection{5.2 Recomendaciones}
+\lipsum[26]
+
+% Referencias Bibliográficas
+\newpage
+\section*{REFERENCIAS BIBLIOGRÁFICAS}
+\addcontentsline{toc}{section}{REFERENCIAS BIBLIOGRÁFICAS}
+Las referencias deben numerarse según el estilo de redacción de la American Psychological Association (APA).
+
+% Anexos
+\newpage
+\section*{ANEXOS}
+\addcontentsline{toc}{section}{ANEXOS}
+\lipsum[27]
+
+\end{document}
